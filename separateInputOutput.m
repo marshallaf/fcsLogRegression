@@ -1,0 +1,1 @@
+function [X, y] = separateInputOutput(data)cols = size(data,2);X = data(:, 1:cols-1);y = data(:, cols);
