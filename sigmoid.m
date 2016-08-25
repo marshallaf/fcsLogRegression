@@ -1,0 +1,1 @@
+function g = sigmoid(X)% calculates the sigmoid function of input X% X can be a scalar, a vector, or a matrixg = exp(-X);g = 1 + g;g = 1 ./ g;
