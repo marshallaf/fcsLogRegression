@@ -1,0 +1,1 @@
+function F1 = Fscore(trueValues, predictions)actualTrueNum = size(find(trueValues==1),1);predictTrue = find(predictions==1);predictTrueNum = size(predictTrue,1);truePos = size(find(trueValues(predictTrue)==1),1);precision = truePos / predictTrueNum;recall = truePos / actualTrueNum;F1 = (2*precision*recall) / (precision + recall);end
