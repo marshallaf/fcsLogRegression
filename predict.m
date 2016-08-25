@@ -1,1 +1,1 @@
-function [predictions] = predict(data, theta)% calculate score of each inputgz = data * theta;% make prediction of 0 or 1 depending on relation to 0prediction = gz >= 0;end
+function [predictions] = predict(data, theta)% calculate score of each inputgz = data * theta;% make prediction of 0 or 1 depending on relation to 0predictions = gz >= 0;end
